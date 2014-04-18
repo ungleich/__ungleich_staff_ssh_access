@@ -21,6 +21,9 @@
 
 user="$__object_id"
 
+################################################################################
+# not at ungleich GmbH (anymore)
+#
 set --
 for resigned in henk; do
     keyfile="$__type/files/${key}.pub"
@@ -31,7 +34,10 @@ done
 __ssh_authorized_keys "ungleich-staff-absent-$user" \
     --owner "$user" --state absent "$@"
 
-
+################################################################################
+# currently at ungleich GmbH (anymore)
+#
+set --
 for key in dave nico tobias; do
     keyfile="$__type/files/${key}.pub"
 
