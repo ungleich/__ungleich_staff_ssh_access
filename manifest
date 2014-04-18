@@ -25,7 +25,7 @@ user="$__object_id"
 # not at ungleich GmbH (anymore)
 #
 set --
-for resigned in henk; do
+for key in henk; do
     keyfile="$__type/files/${key}.pub"
     set -- "$@" --key
     set -- "$@" "$(echo $(cat "$keyfile"))"
