@@ -20,6 +20,8 @@
 
 
 user="$__object_id"
+state=$(cat "$__object/parameter/state")
+
 
 ################################################################################
 # not at ungleich GmbH (anymore)
@@ -46,4 +48,4 @@ for key in dave nico tobias; do
 done
 
 __ssh_authorized_keys "ungleich-staff-$user" \
-    --owner "$user" --state present "$@"
+    --owner "$user" --state "$state" "$@"

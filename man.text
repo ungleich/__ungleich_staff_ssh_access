@@ -1,5 +1,5 @@
 cdist-type__ungleich_staff_ssh_access(7)
-=================================================
+=========================================
 ungleich GmbH <cdist--@--ungleich.ch>
 
 
@@ -17,8 +17,14 @@ EXAMPLES
 --------
 
 --------------------------------------------------------------------------------
+# Grant access to root
 __ungleich_staff_ssh_access root
-__ungleich_staff_ssh_access anotheruser
+
+# More explicitly
+__ungleich_staff_ssh_access anotheruser --state present
+
+# Remove access for ungleich staff
+__ungleich_staff_ssh_access root --state absent
 --------------------------------------------------------------------------------
 
 
