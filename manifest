@@ -40,7 +40,7 @@ __ssh_authorized_keys "ungleich-staff-absent-$user" \
 # currently at ungleich GmbH
 #
 set --
-for key in dave nico dominique ; do
+for key in dave nico dominique carlos ; do
     keyfile="$__type/files/${key}.pub"
 
     set -- "$@" --key
