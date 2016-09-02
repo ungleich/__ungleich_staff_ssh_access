@@ -27,7 +27,7 @@ state=$(cat "$__object/parameter/state")
 # not at ungleich GmbH (anymore)
 #
 set --
-for key in henk tobias; do
+for key in dave henk tobias; do
     keyfile="$__type/files/${key}.pub"
     set -- "$@" --key
     set -- "$@" "$(echo $(cat "$keyfile"))"
@@ -40,7 +40,7 @@ __ssh_authorized_keys "ungleich-staff-absent-$user" \
 # currently at ungleich GmbH
 #
 set --
-for key in dave nico dominique carlos ; do
+for key in nico dominique carlos ; do
     keyfile="$__type/files/${key}.pub"
 
     set -- "$@" --key
